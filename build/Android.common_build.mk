@@ -170,6 +170,7 @@ ifneq ($(HOST_OS),darwin)
   art_clang_cflags += -Wmissing-noreturn
 endif
 
+art_clang_cflags += -Wno-null-dereference
 
 # GCC-only warnings.
 art_gcc_cflags := -Wunused-but-set-parameter
